@@ -29,7 +29,7 @@ const History = () => {
               {historyItems.map((element) => {
                 return (
                   <>
-                    <Col md={2} className='my-2'>
+                    <Col md={3} xl={3} className='my-2'>
                       <CardHistory name={element.name} icon={element.icon} temp={element.temp} />
                     </Col>
                   </>
