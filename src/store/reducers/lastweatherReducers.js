@@ -1,7 +1,7 @@
-import { ADD_WEATHER_REQUEST } from '../constants/lastweatherConstans';
+import { ADD_WEATHER } from '../constants/lastweatherConstans';
 export const lastweatherReducer = (state = { historyItems: [] }, action) => {
   switch (action.type) {
-    case ADD_WEATHER_REQUEST:
+    case ADD_WEATHER:
       const item = action.payload;
 
       const existItem = state.historyItems.find((x) => x.name === item.name);

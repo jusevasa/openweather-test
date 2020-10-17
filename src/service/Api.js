@@ -3,10 +3,11 @@ import axios from 'axios';
 /**
  * get Dayly weather for HearoWeatherComponent
  * @method getDaily
+ * @param query String
  * @returns 'HearoWeatherComponent' object whit data
  **/
 export const dailyWeather = (query) => {
-  const res = axios.get(process.env.REACT_APP_API_URL + 'weather', {
+  return axios.get(`${process.env.REACT_APP_API_URL}weather`, {
     params: {
       q: query,
       units: 'metric',
@@ -14,16 +15,18 @@ export const dailyWeather = (query) => {
       lang: 'es',
     },
   });
-  return res;
+  
 };
 
 /**
  * get Seven Day's weather for LastWeatherComponent
  * @method getDailys
+ * @param lat Number
+ * @param lon Number
  * @returns 'LastWeatherComponent' object whit data
  **/
 export const lastWeather = async (lat, lon) => {
-  const {data}  = await axios.get(process.env.REACT_APP_API_URL + 'onecall', {
+  const {data}  = await axios.get(`${process.env.REACT_APP_API_URL}onecall`, {
     params: {
       lat: lat,
       lon: lon,

@@ -10,19 +10,22 @@ const Searchbar = () => {
 
   const [search, setSearch] = useState('');
 
+  /**
+   * @method handleSearch
+   * @description dispatch input search
+   **/
   const handleSearch = (e) => {
-    if(e.key){
+    if (e.key) {
       if (e.key === 'Enter') {
         dispatch(daily(search));
         dispatch(addToHistory(search));
         setSearch('');
       }
-    }else{
+    } else {
       dispatch(daily(search));
       dispatch(addToHistory(search));
       setSearch('');
     }
-
   };
 
   return (

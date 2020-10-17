@@ -7,6 +7,10 @@ import './Cardhistory.css';
 const Cardhistory = ({ name, icon, temp }) => {
   const dispatch = useDispatch();
 
+  /**
+   * @method handlerOnClickMore
+   * @description update global state weather
+   **/
   const handlerOnClickMore = () => {
     dispatch(daily(name));
   };

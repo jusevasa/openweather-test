@@ -22,7 +22,7 @@ const Header = () => {
           </Link>
         </Container>
       </div>
-      {sidebar && <div className='navbar__mask'></div>}
+      {sidebar && <div className='navbar__mask'/>}
       <nav className={sidebar ? 'navbar__menu active' : 'navbar__menu'}>
         <ul className='navbar__items'>
           <li className='navbar__text' onClick={showSidebar}>

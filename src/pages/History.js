@@ -22,7 +22,7 @@ const History = () => {
         <Row>
           {historyItems.length === 0 ? (
             <Message>
-              No hay elementos por ahora oprima <Link to='/'>volver</Link> para realizar una busqueda
+              No hay elementos por ahora, oprima <Link to='/'>volver</Link> para realizar una busqueda
             </Message>
           ) : (
             <>
