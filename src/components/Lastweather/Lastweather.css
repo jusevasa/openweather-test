@@ -1,0 +1,35 @@
+/* @Group Container*/
+.container-last {
+  border: 1px solid #939393;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* @Group Container-items*/
+.container-last__items {
+  columns: 7;
+  width: 100%;
+  column-rule: 1px solid #939393;
+}
+/* @Group cards*/
+.container-last-items__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-last-items__card small {
+  text-transform: capitalize;
+}
+
+.container-last-items__card strong:nth-child(1) {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+/* @Group cards 1# item blue*/
+.container-last-items__card:nth-child(1) strong:nth-child(1) {
+  color: #2396bd;
+}
